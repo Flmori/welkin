@@ -1,0 +1,185 @@
+ body {
+        background-image: url(New\ folder/gregoire-jeanneau-5aN_QNPSIdA-unsplash.jpg);
+        display:grid;
+        justify-content: center;
+        align-items: center;
+        min-height: 80vh;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+    }
+    .foam {
+        display: grid;
+        background-color: rgba(240, 240, 240, 0.6);
+        border-radius: 15px;
+        padding: 50px;
+        font-family: sans-serif;
+        justify-content: center;
+        text-align: center;
+        gap: 20px;
+        margin:  0 auto;
+        width: 100%;
+        max-width: 500px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+      }
+      
+      .foam input[type='text'] {
+        width: 100%;
+        padding: 9px;
+        
+        font-size: 16px;
+        border-radius: 5px;
+        border: none;
+        box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+      }
+      
+      .btn-kirim {
+        position: relative;
+        width: 50%;
+        padding: 10px;
+        background-color: #343a4a;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        margin: 0 auto;
+        opacity: 0.8;
+        font-size: 1.2rem;
+      }
+      
+      .btn-kirim:hover {
+        opacity: 1;
+      }
+      
+      .foto {
+        display: none;
+        width: auto;
+        justify-content: center;
+        text-align: center;
+        gap: 20px;
+        background-color: rgba(240, 240, 240, 0.6);
+        padding: 40px;
+        font-family: sans-serif;
+        border-radius: 15px;
+        font-size: 1.5rem;
+        margin: 0 auto;
+        margin-top: 50px;
+        margin-bottom: 50px;
+      }
+      .btn-kirim2 {
+        position: relative;
+        width: 50%;
+        padding: 10px;
+        background-color: #343a4a;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        margin: 0 auto;
+        opacity: 0.8;
+        font-size: 1.2rem;
+      }
+      
+      .btn-kirim2:hover {
+        opacity: 1;
+      }
+      
+      :root{
+        --arrow: #1a05ff;
+        --bg: #fef8f9;
+      }
+      * {
+        box-sizing: border-box;
+        &::before, &::after {
+          box-sizing: border-box;
+        }
+      }
+      .slider-nav button {
+        position: relative;
+        display: inline-block;
+        cursor: pointer;
+        outline: none;
+        border: 0;
+        vertical-align: middle;
+        text-decoration: none;
+        padding: 20px;
+        background: transparent;
+        color: var(--arrow);
+        font-size: 2rem;
+      }
+      
+      .slider-nav button span {
+        position: relative;
+        display: inline-block;
+        transform: translateX(0);
+        transition: transform 0.3s ease;
+      }
+      
+      .previous:hover span {
+        transform: translateX(-10px) scale(1.2);
+      }
+      
+      .next:hover span {
+        transform: translateX(10px) scale(1.2);
+      }
+      
+      .slider-nav ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+      }
+      
+      .slider-nav li {
+        display: flex;
+        flex: 2;
+        text-align: center;
+      }
+
+      .container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 50px;
+        display: none;
+      }
+      
+      .container img {
+        max-width: 100%;
+        display: none;
+        box-shadow: 10px 10px 20px 0 rgba(94,47,59,0.2);
+      }
+      
+      img.active {
+        display: block;
+        animation: fadeImg 0.8s;
+      }
+      .slider-nav .arrow {
+        flex: 0 0 15%;
+      }
+      
+      .slider-nav a {
+        flex-basis: 100%;
+        display: flex;
+        align-items: center;
+      }
+      
+      .slider-nav span {
+        display: block;
+        width: 100%;
+      }
+      
+      
+      @keyframes fadeImg {
+        from {
+          opacity: 0;
+        }
+      
+        to {
+          opacity: 1;
+        }
+      }
+      .inactive {
+        display: none;
+      }
